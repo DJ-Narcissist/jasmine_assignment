@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TIP POOL</title>
+    <link rel="stylesheet" href="tip.css">
+    <link rel="stylesheet" href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css">
+    </head>
+    <body>
+        <h1>Tip Pool</h1>
+        <section>
+            <aside>
+                <h4>Input payment info</h4>
+                <form id="paymentForm">
+                    <label for="billAmt">Bill Amount</label>
+                    <input type="number" id="billAmt" autofocus/>
+                    <label for="tipAmt">Tip Amount</label>
+                    <input type="number" id="tipAmt" />
+                    <button>Submit</button>
+                </form>
+
+                <table id="paymentTable">
+                    <thead>
+                        <tr>
+                            <th>Bill Amount</th>
+                            <th>Tip Amount</th>
+                            <th>Tip Percent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>    
+                </table>
+                </h4>
+            </aside>
+                <h4>Input Server info</h4>
+                <form id="serverForm">
+                    <label for="serverName">Server Name</label>
+                    <input id="serverName" />
+                    <button>Submit</button>
+                </form>
+
+                <table id="serverTable">
+                    <thead>
+                        <tr>
+                            <th>Server Name</th>
+                            <th>Earnings</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+        </section>
+
+        <section id="Summary">
+            <h3>Shift Summary </h3>
+            <table id="summaryTable">
+                <thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </section>
+
+        <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+        <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+        <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/boot.js"></script>
+        <script src="tip-ser.test.js"
+    </body>
+</html>
