@@ -13,7 +13,7 @@ paymentForm.addEventListener('submit', submitPaymentInfo);
 // Add a curPayment object to allPayments, update html and reset input values
 
 function submitPaymentInfo(evt){
-    if (evt) evt.preventDefault(); // when running test ther is no event
+    if (evt) evt.preventDefault(); // when running test there is no event
 
     let curPayment = createCurPayment();
 
